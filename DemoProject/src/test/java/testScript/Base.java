@@ -15,7 +15,7 @@ public class Base {
 			{
 				System.out.println("Initialising Browser");
 				/*WebDriver*/ driver = new ChromeDriver(); //To initialise the browser to a reference variable of WebDriver Interface. We can choose any browser
-				driver.get("https://selenium.qabible.in/"); //To launch the url
+				driver.get("https://groceryapp.uniqassosiates.com/admin"); //To launch the url
 				driver.manage().window().maximize(); //To maximise the window		
 				
 			}
