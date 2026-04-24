@@ -2,20 +2,30 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T16:50:21 CEST" name="Default suite" finished-at="2026-04-14T16:50:41 CEST" duration-ms="20118">
+  <suite started-at="2026-04-24T18:12:05 CEST" name="Suite" finished-at="2026-04-24T18:12:15 CEST" duration-ms="9628">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyTheUserIsAbletoLoginWithValidCredentials()[pri:1, instance:testScript.LoginTest@7c7a06ec]" name="verifyTheUserIsAbletoLoginWithValidCredentials" class="testScript.LoginTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-04-14T16:50:21 CEST" name="Default test" finished-at="2026-04-14T16:50:41 CEST" duration-ms="20118">
+    <test started-at="2026-04-24T18:12:05 CEST" name="Test" finished-at="2026-04-24T18:12:15 CEST" duration-ms="9628">
       <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="browserInitialisation()[pri:0, instance:testScript.LoginTest@14cd1699]" started-at="2026-04-14T16:50:21 CEST" name="browserInitialisation" finished-at="2026-04-14T16:50:41 CEST" duration-ms="19502" status="PASS">
+        <test-method is-config="true" signature="browserInitialisation(java.lang.String)[pri:0, instance:testScript.LoginTest@7c7a06ec]" started-at="2026-04-24T18:12:05 CEST" name="browserInitialisation" finished-at="2026-04-24T18:12:10 CEST" duration-ms="5078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialisation -->
-        <test-method signature="verifyTheUserIsAbletoLoginWithInvalidCredentials3()[pri:0, instance:testScript.LoginTest@14cd1699]" started-at="2026-04-14T16:50:41 CEST" name="verifyTheUserIsAbletoLoginWithInvalidCredentials3" finished-at="2026-04-14T16:50:41 CEST" duration-ms="562" status="PASS">
+        <test-method signature="verifyTheUserIsAbletoLoginWithValidCredentials()[pri:1, instance:testScript.LoginTest@7c7a06ec]" started-at="2026-04-24T18:12:10 CEST" name="verifyTheUserIsAbletoLoginWithValidCredentials" finished-at="2026-04-24T18:12:15 CEST" duration-ms="4459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbletoLoginWithInvalidCredentials3 -->
+        </test-method> <!-- verifyTheUserIsAbletoLoginWithValidCredentials -->
       </class> <!-- testScript.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

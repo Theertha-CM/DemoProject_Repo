@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="Chrome"></parameter> 
+    <classes>
+      <class name="testScript.LoginTest">
+      <methods><include name="verifyTheUserIsAbletoLoginWithValidCredentials"></include></methods>
+       </class>
+       <!--<class name="testScript.LogOutTest">
+      </class> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!--To run all the test cases in all the test classes inside testscript package in src/test/java together, we can run the testng.xml file.
+ * To Create testng.xml :
+ 	Right click on Project> TestNG> Convert to TestNG
+ * test-output> testng.xml>right click>Run As>TestNG suit 
+ * To run only selected test cases, we can use :
+ 	 <methods><include name="verifyTheUserIsAbletoLoginWithValidCredentials"></include>
+ 	 <include name="testCase2"></include>
+ 	 <include name="testCase3"></include>
+ 	 </methods>
+ * To run all test cases except some of the test cases, we can use :
+ 	<methods><exclude name="verifyTheUserIsAbletoLoginWithValidCredentials"></exclude>
+ 	<exclude name="testCase2"></exclude>
+ 	</methods> 
+ * Here the parameter tag is used to cope with the Paratemeters annotation in Base class.
+ 	<parameter name="browser" value="Chrome"></parameter> 
+ 	name is the value provided in the @Parameter() annotation and the value is the Browser in which the code is to be executed
+ 
+ -->
+
